@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> News Article </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body></br>
+          <div class="border">
+                <h1>{{ item['source'] }} - {{ item['title'] }}</h1>
+                <p>{{ item['content'] }}</p>
+
+                <span><span id="clock"></span></span>
+                <script>
+                function updateClock() {
+                    var clock = document.getElementById("clock");
+                    var date = new Date();
+                    clock.innerHTML = date.toLocaleTimeString();
+                }
+                setInterval(updateClock, 1000);
+                </script>
+
+                </br></br>
+				</p>
+                 <a href="/">Home</a><br> </a> | <a href="/">Back</a><br> </a> <br><br>
+          </div>
+        </div>
+    </body>
+</html>

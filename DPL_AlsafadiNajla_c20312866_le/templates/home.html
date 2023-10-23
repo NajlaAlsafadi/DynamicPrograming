@@ -1,0 +1,10 @@
+
+<html>
+<div>{{ content }}</div>
+
+<ul>
+{% for item in data %}
+    <li><a href="/post/{{ item['id'] }}">{{ item['source'] }} - {{ item['title'] }}</a></li>
+{% end-for %}
+</ul>
+</html>
